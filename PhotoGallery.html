@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+        text-decoration: underline;
+        background-color: #1a1a1a;
+        color: #f3be05;
+        text-align: center;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      .column {
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GALLERY</h1>
+    <div class="row">
+      <div class="column">
+        <img src="Gallery/20200319_171456-min.jpg" style="width: 100%" />
+        <img src="Gallery/20200321_160153 (1)-min.jpg" style="width: 100%" />
+        <img src="Gallery/20220712_174438-min.jpg" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="Gallery/20220423_200246-min.jpg" style="width: 100%" />
+        <img src="Gallery/20200908_133029-min.jpg" style="width: 100%" />
+        <img src="Gallery/meredumbrella-min.jpg" style="width: 100%" />
+      </div>
+      <div class="column">
+        <img src="Gallery/20200517_165853-min.jpg" style="width: 100%" />
+        <img src="Gallery/20220516_123915-min.jpg" style="width: 100%" />
+        <img src="Gallery/20200609_134356-min.jpg" style="width: 100%" />
+        <img src="Gallery/20200627_205346-min.jpg" style="width: 100%" />
+      </div>
+    </div>
+  </body>
+</html>
